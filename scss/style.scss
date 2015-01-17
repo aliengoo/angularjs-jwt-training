@@ -1,0 +1,11 @@
+$loginInputWidth: 250px;
+
+input {
+  &[name='username'] {
+    width : $loginInputWidth;
+  }
+
+  &[name='password'] {
+    width : $loginInputWidth;
+  }
+}

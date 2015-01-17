@@ -1,0 +1,26 @@
+<div class="container">
+  <header>
+    <h1>
+      Login
+    </h1>
+  </header>
+
+  <div class="row">
+    <form ng-submit="vm.login(vm.username, vm.password)">
+
+      <div class="form-group">
+        <label for="username" class="control-label">User name</label>
+        <input type="text" ng-model="vm.username" class="form-control" id="username" name="username">
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="control-label">Password</label>
+        <input type="password" ng-model="vm.password" class="form-control" id="password" name="password">
+      </div>
+
+      <br/>
+      <button class="btn btn-default" type="submit">Login</button>
+    </form>
+    <button class="btn btn-default" ng-click="vm.logout()">Logout</button>
+  </div>
+</div>
